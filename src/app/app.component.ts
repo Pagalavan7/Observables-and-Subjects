@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   title = 'observables';
+  result: any;
 
   x1() {
     return new Observable((x) => {
@@ -19,7 +20,12 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    const res = this.x1().subscribe();
-    console.log(res);
+    this.result = this.x1().subscribe();
+    console.log(this.result);
+  }
+
+  ngOnDestroy() {
+    this.result.unsubscribe();
+    console.log('the observable unsubscribed..');
   }
 }
