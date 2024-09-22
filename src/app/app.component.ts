@@ -3,11 +3,19 @@ import { RouterOutlet } from '@angular/router';
 import { Observable, Subscription } from 'rxjs';
 import { OfandfromComponent } from './ofandfrom/ofandfrom.component';
 import { MapandfilterComponent } from './mapandfilter/mapandfilter.component';
+import { CreateNewTaksComponent } from './create-new-taks/create-new-taks.component';
+import { ShowTasksComponent } from './show-tasks/show-tasks.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, OfandfromComponent, MapandfilterComponent],
+  imports: [
+    RouterOutlet,
+    OfandfromComponent,
+    MapandfilterComponent,
+    CreateNewTaksComponent,
+    ShowTasksComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
