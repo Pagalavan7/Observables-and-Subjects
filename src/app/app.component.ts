@@ -5,6 +5,7 @@ import { OfandfromComponent } from './ofandfrom/ofandfrom.component';
 import { MapandfilterComponent } from './mapandfilter/mapandfilter.component';
 import { CreateNewTaksComponent } from './create-new-taks/create-new-taks.component';
 import { ShowTasksComponent } from './show-tasks/show-tasks.component';
+import { SubjectComponent } from './subject/subject.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { ShowTasksComponent } from './show-tasks/show-tasks.component';
     MapandfilterComponent,
     CreateNewTaksComponent,
     ShowTasksComponent,
+    SubjectComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

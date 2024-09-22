@@ -15,10 +15,10 @@ export class ShowTasksComponent {
   constructor(private taskService: TaskService) {}
 
   ngOnInit() {
+    console.log('Show task initialized..');
     this.taskService.event.subscribe({
-      next: (data: any) => {
-        console.log(data);
-        this.tasks.push(data);
+      next: (x) => {
+        this.tasks.push(x);
       },
     });
   }
