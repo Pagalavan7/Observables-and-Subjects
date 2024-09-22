@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Observable, Subscription } from 'rxjs';
+import { OfandfromComponent } from "./ofandfrom/ofandfrom.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, OfandfromComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
