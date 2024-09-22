@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Observable, Subscription } from 'rxjs';
-import { OfandfromComponent } from "./ofandfrom/ofandfrom.component";
+import { OfandfromComponent } from './ofandfrom/ofandfrom.component';
+import { MapandfilterComponent } from './mapandfilter/mapandfilter.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, OfandfromComponent],
+  imports: [RouterOutlet, OfandfromComponent, MapandfilterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
